@@ -51,6 +51,8 @@ body {
     font-size: 12px;
     opacity: 0;
     transition: opacity 0.3s ease;
+    border:none;
+    border-radius:5px;
 }
 
 .color-box:hover .hex-code {
