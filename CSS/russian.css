@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+  }
+  .container {
+    padding: 10px;
+    margin-top: 60px;
+  }
+  
+  .color-box {
+    width: 20%;
+    height: 150px;
+    float: left;s
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .color-box:hover {
+    opacity: 0.8;
+  }
+  
+  .color-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .color-box:hover::before {
+    opacity: 1;
+  }
+  
+  .color-box .hex-code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .color-box:hover .hex-code {
+    opacity: 1;
+  }
+  
+  .color-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  
+  .color-box.creamy-peach {
+    background-color: #ffdab9;
+  }
+  
+  .color-box.rosy-highlight {
+    background-color: #ffefd5;
+  }
+  
+  .color-box.soft-blue {
+    background-color: #809fff;
+  }
+  
+  .color-box.brewed-mustard {
+    background-color: #ff7f50;
+  }
+  
+  .color-box.old-geranium {
+    background-color: #f08080;
+  }
+  
+  .color-box.sawtooth-aak {
+    background-color: #ffa07a;
+  }
+  
+  .color-box.summertime {
+    background-color: #fafad2;
+  }
+  
+  .color-box.cornflower {
+    background-color: #6495ed;
+  }
+  
+  .color-box.tigerlily {
+    background-color: #ff8c00;
+  }
+  
+  .color-box.deep-rose {
+    background-color: #db7093;
+  }
+  
+  .color-box.purple-mountain-majesty {
+    background-color: #9400d3;
+  }
+  
+  .color-box.rogue-pink {
+    background-color: #f08080;
+  }
+  
+  .color-box.squeaky {
+    background-color: #40e0d0;
+  }
+  
+  .color-box.apple-valley {
+    background-color: #fa8072;
+  }
+  
+  .color-box.pencil-lead {
+    background-color: #708090;
+  }
+  
+  .color-box.purple-corallite {
+    background-color: #800080;
+  }
+  
+  .color-box.flamingo-pink {
+    background-color: #ffc0cb;
+  }
+  
+  .color-box.blue-curacao {
+    background-color: #4682b4;
+  }
+  
+  .color-box.porcelain-rose {
+    background-color: #f5f5dc;
+  }
+  
+  .color-box.biscay {
+    background-color: #000080;
+  }
+  @media only screen and (max-width: 768px) {
+    .color-box {
+      width: 100%;
+      float: none;
+      margin: 10px 0;
+    }
+  }

@@ -1,0 +1,136 @@
+/* style.css */
+
+body {
+    background-color: #4169e1; /* Blue background */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.nav a."newen" {
+    background-color: #f2f2f2;
+    color: #4169e1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.net{
+    border-radius: 80px ;
+    border-width: 60px;
+    background-color: red;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 0; */
+}
+
+.header-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.color-palette {
+    width: 30%;
+    background-color: white;
+    color: #4169e1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.palette-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+/* .cta-button {
+    background-color: #4169e1;
+    height: 40px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+} */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #293f88; /* Darker blue for footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .color-palette {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text p {
+        font-size: 0.8rem;
+    }
+}
