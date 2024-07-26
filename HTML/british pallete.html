@@ -69,16 +69,6 @@
                     class="hex-code">#34495e</span> <span
                     class="color-name">ELECTROMAGNETIC</span></div>
         </div>
-        <script>
-            const colorBoxes = document.querySelectorAll(".color-box");
-            const copyButton = document.querySelector(".copy-button");
-            colorBoxes.forEach((colorBox) => {
-                colorBox.addEventListener("click", () => {
-                    const hexCode = colorBox.getAttribute("data-hex");
-                    navigator.clipboard.writeText(hexCode);
-                    alert(`Hex code ${hexCode} copied to clipboard!`);
-                });
-            });
-        </script>
+        
     </body>
 </html>
